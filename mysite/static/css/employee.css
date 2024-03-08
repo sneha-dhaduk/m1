@@ -1,0 +1,23 @@
+.btn1 {
+    background-color:red;
+    color: black;
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 3PX;
+ }
+
+ .btn2 {
+    background-color:yellow;
+    color: black;
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 3PX;
+ }
+
+ .btn3 {
+    background-color:green;
+    color: black;
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 3PX;
+ }

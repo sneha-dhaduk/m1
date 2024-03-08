@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>employeelist</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/employee.css">
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <th>No.</th>
+            <th>Firstname</th>            
+            <th>Lastname</th>
+            <th>Salary</th>
+            <th>Actions</th>
+        </tr>
+        {% for i in object_list %}
+        <tr>
+            <td>{{forloop.counter}}</td>
+            <td>{{i.firstname}}</td>
+            <td>{{i.lastname}}</td>
+            <td>{{i.salary}}</td>
+            <td><a class="btn1" href="{% url 'employeedetail' i.id %}">Detail</a>
+                <a  class="btn2" href="{% url 'employeedelete' i.id %}">Delete</a>
+                <a class="btn3" href="{% url 'employeeupdate' i.id %}">Update</a>
+            </td>
+        </tr> 
+        {% endfor %}
+    </table>
+</body>
+</html>
